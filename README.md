@@ -38,17 +38,17 @@ A multichain blockchain network was set up using various devices. Node 1 was a l
 
 # Implementation of Attack
 
-* DOS
+* **DOS**
   - TCP Flooding : A TCP SYN flood attack overwhelms a server with numerous SYN requests, causing resource exhaustion, slowdowns, and potential server crashes due to high CPU and memory usage.
   - DNS Flooding : A DNS flood attack overwhelms a DNS server, causing delays and failures in domain name resolution, causing widespread disruptions and difficulty accessing websites and online services.
-  [Contribution guidelines for this project](/DOS code.py)
+    (DOS code.py)
 
 
-* DDOS
+* **DDOS**
   - A DDoS attack occurs when two zombie nodes, controlled by a single main node, overwhelm the network with excessive requests, disrupting normal operations and potentially compromising security.
     * The same code we used on DoS is used here with running in other nodes
 
-* Eclipse Attack :
+* **Eclipse Attack** :
   We need to change the permission from
     * anyone-can-connect  	 :false
     * anyone-can-send	       :false
@@ -66,13 +66,13 @@ A multichain blockchain network was set up using various devices. Node 1 was a l
     * anyone-can-admin	 	   :true
 
 
-* Livness Attack :
+* **Livness Attack** :
  we aim to deactivate a node by sending malicious shell code that blocks the port, rendering the node non-operational if the code is executed. This disrupts the node's ability to participate in network activities and compromises the overall system's functionality.
 
-* Transaction Flooding: Transaction flooding as an attack involves overwhelming the blockchain network with a massive number of transactions, aiming to degrade its performance and disrupt normal operations. The code for sending transaction is above
+* **Transaction Flooding**: Transaction flooding as an attack involves overwhelming the blockchain network with a massive number of transactions, aiming to degrade its performance and disrupt normal operations. The code for sending transaction is above
 
-* Time Jacking: Time jacking involves manipulating the system time on each node to create discrepancies and then initiating two transactions to check the timestamp logs. This attack tests whether inconsistent times across nodes can be exploited to gain an advantage or cause errors. However, modern blockchain protocols have safeguards against such attacks, making time jacking ineffective.
+* **Time Jacking**: Time jacking involves manipulating the system time on each node to create discrepancies and then initiating two transactions to check the timestamp logs. This attack tests whether inconsistent times across nodes can be exploited to gain an advantage or cause errors. However, modern blockchain protocols have safeguards against such attacks, making time jacking ineffective.
 
-* Spatial Partitioning Attack: A Spatial Partitioning Attack, which attempts to divide the network into isolated segments, is not possible in MultiChain because only one node can be isolated at a time. Because of this limitation, partitioning the entire network is impossible, making the attack ineffective.
+* **Spatial Partitioning Attack**: A Spatial Partitioning Attack, which attempts to divide the network into isolated segments, is not possible in MultiChain because only one node can be isolated at a time. Because of this limitation, partitioning the entire network is impossible, making the attack ineffective.
 
 
